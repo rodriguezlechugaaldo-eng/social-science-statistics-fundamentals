@@ -1,9 +1,9 @@
 # Social Science Statistics Fundamentals
 
-### Advanced Descriptive Statistics, Exploratory Data Analysis, and Computational Reproducibility Using Stata, R, and Python
+### Descriptive Statistics, Exploratory Data Analysis, and Computational Reproducibility for Social Sciences
 
-**Academic Level:** Graduate / Master's Level  
-**Research Areas:** Economics, Political Science, Political Economy, and Public Policy  
+**Research Fields:** Social Sciences, with emphasis on Economics, Political Science, Public Policy, and Political Economy  
+**Academic Level:** Undergraduate Foundations to Graduate / Master's Level  
 **Methodological Approach:** Quantitative, Descriptive, and Exploratory  
 **Statistical Software:** Stata 17, R, and Python 3  
 **Project Status:** In Development  
@@ -13,31 +13,41 @@
 
 ## 1. Project Overview
 
-Quantitative research in the social sciences requires more than the mechanical application of statistical procedures. Reliable empirical analysis depends on the theoretical justification of statistical measures, the quality and structure of the data, the transparency of analytical decisions, and the reproducibility of computational results.
+Statistical analysis constitutes a fundamental component of quantitative research in the social sciences.
 
-This project develops a systematic introduction to descriptive statistics and exploratory data analysis through parallel implementations in **Stata 17, R, and Python**.
+The systematic description of empirical information allows researchers to characterize populations, identify distributional patterns, examine statistical relationships, and investigate variation across individuals, households, organizations, institutions, territories, and periods.
 
-Rather than treating statistical software as interchangeable computational tools, the project examines how different implementations, default settings, data structures, and numerical conventions may affect analytical results.
+However, rigorous statistical analysis requires more than the mechanical application of computational procedures.
 
-The project combines mathematical foundations, empirical applications, statistical programming, data validation, and reproducibility practices.
+Reliable empirical research depends on conceptual clarity, measurement validity, data quality, appropriate statistical definitions, transparent analytical decisions, and computational reproducibility.
 
-Its central purpose is to establish a rigorous computational foundation for quantitative research in economics, political science, political economy, public policy, and related social science disciplines.
+**Social Science Statistics Fundamentals** develops a systematic framework for descriptive statistics and exploratory data analysis through parallel implementations in **Stata 17, R, and Python**.
 
-The project is organized into three progressive levels:
+The project is designed for general applications in the social sciences, with particular emphasis on four interconnected research fields:
 
-**Level I — Statistical Foundations**
+- **Economics:** Economic indicators, income distributions, labor markets, productivity, inequality, and economic development.
+- **Political Science:** Political participation, political institutions, democratic characteristics, political representation, and comparative political analysis.
+- **Public Policy:** Socioeconomic indicators, policy problems, population characteristics, public service coverage, and descriptive monitoring of policy outcomes.
+- **Political Economy:** Distributional structures, economic and political inequalities, institutional characteristics, and relationships between economic and political variables.
 
-Mathematical definitions, statistical description, univariate and bivariate analysis, and verification of fundamental statistical calculations.
+These fields are approached through a common statistical framework rather than separate methodological systems.
 
-**Level II — Advanced Descriptive and Exploratory Analysis**
+The same mathematical principles, computational procedures, and reproducibility standards will be applied to different substantive research problems.
 
-Robust statistics, distributional analysis, inequality and concentration measures, survey weighting, multivariate exploratory methods, and sensitivity analysis.
+The project emphasizes:
 
-**Level III — Computational Reproducibility and Replication**
+1. Mathematical foundations of statistical methods.
+2. Conceptual and operational definitions of variables.
+3. Data quality and measurement consistency.
+4. Descriptive and exploratory statistical analysis.
+5. Transparent statistical interpretation.
+6. Cross-software computational validation.
+7. Reproducible analytical workflows.
+8. Documentation of analytical decisions and limitations.
 
-Cross-software validation, automated verification, environment documentation, reproducible analytical workflows, and replication of selected published descriptive results.
+The project does not attempt to establish causal relationships.
 
-The statistical procedures will be implemented progressively using a common dataset and consistent analytical definitions.
+Its principal objective is to develop a rigorous methodological and computational foundation for subsequent quantitative social science research.
 
 ---
 
@@ -45,86 +55,123 @@ The statistical procedures will be implemented progressively using a common data
 
 ### 2.1. General Objective
 
-To develop, implement, document, and validate descriptive and exploratory statistical methods for social science research through reproducible computational workflows in Stata, R, and Python.
+To develop, implement, document, and validate descriptive and exploratory statistical methods applicable to quantitative research in the social sciences through reproducible computational workflows in Stata, R, and Python.
 
 ### 2.2. Specific Objectives
 
-1. Establish the mathematical and conceptual foundations of descriptive statistics.
-2. Identify units of analysis, populations, samples, and levels of measurement.
-3. Evaluate data quality, consistency, completeness, and analytical suitability.
-4. Construct and interpret univariate and bivariate statistical distributions.
-5. Calculate conventional and robust measures of central tendency and dispersion.
-6. Examine distributional shape, quantiles, and potential outliers.
-7. Analyze statistical associations without assuming causal relationships.
-8. Calculate descriptive indicators of inequality and concentration.
-9. Apply appropriate weighting procedures when supported by the selected dataset.
-10. Explore multivariate data structures through descriptive techniques.
-11. Develop interpretable statistical visualizations.
-12. Implement equivalent statistical procedures in Stata, R, and Python.
-13. Evaluate the numerical consistency of results across software environments.
-14. Conduct sensitivity analyses to assess the dependence of results on analytical decisions.
-15. Document computational environments, data transformations, and statistical procedures.
-16. Reproduce selected descriptive results from an accessible published study or technical report.
+1. Establish the conceptual and mathematical foundations of descriptive statistics.
+2. Identify populations, samples, units of observation, and units of analysis.
+3. Classify variables according to their measurement properties.
+4. Evaluate data quality, completeness, consistency, and analytical suitability.
+5. Construct and interpret univariate and bivariate statistical distributions.
+6. Calculate conventional and robust descriptive statistics.
+7. Examine statistical variability, distributional shape, and potential outliers.
+8. Explore associations between quantitative and categorical variables.
+9. Analyze descriptive indicators of inequality, concentration, and temporal change.
+10. Apply appropriate weighting procedures when supported by the data.
+11. Explore multivariate patterns using suitable descriptive techniques.
+12. Develop statistically appropriate and interpretable visualizations.
+13. Implement equivalent statistical procedures in Stata, R, and Python.
+14. Verify mathematical and numerical consistency across software environments.
+15. Evaluate sensitivity to alternative analytical decisions.
+16. Document data sources, statistical procedures, and computational environments.
+17. Reproduce selected descriptive results from accessible academic or institutional publications.
+18. Strengthen the interpretation of quantitative evidence in economics, political science, public policy, and political economy.
 
 ---
 
 ## 3. Scope and Analytical Framework
 
-### 3.1. Analytical Scope
+### 3.1. General Analytical Scope
 
-The project focuses on descriptive statistics and exploratory data analysis.
+The project follows a quantitative, descriptive, and exploratory approach.
 
-Its principal purpose is to characterize empirical distributions, describe variation, examine associations, and identify relevant data patterns.
+Its primary purpose is to characterize observed data, describe empirical distributions, examine statistical associations, and identify relevant patterns.
 
 The project distinguishes between:
 
-- Mathematical properties of statistical measures.
-- Empirical properties of observed data.
-- Computational implementation of statistical procedures.
-- Substantive interpretation of statistical results.
+- Conceptual definitions.
+- Operational measurement.
+- Statistical description.
+- Exploratory analysis.
+- Computational implementation.
+- Substantive interpretation.
 
-### 3.2. Levels of Analysis
+### 3.2. Units and Levels of Analysis
 
-The project will progressively address:
+Social science research involves different observational structures.
+
+Potential units include:
+
+- Individuals.
+- Households.
+- Workers.
+- Firms.
+- Organizations.
+- Political institutions.
+- Administrative units.
+- Municipalities.
+- States or provinces.
+- Countries.
+- Time periods.
+
+The project will explicitly identify the unit of analysis associated with each empirical application.
+
+Individual-level, organizational-level, territorial, and aggregate indicators will not be treated as interchangeable.
+
+### 3.3. Statistical Levels
+
+The analytical framework comprises:
 
 **Univariate Analysis**
 
-Statistical description of individual variables.
+Description of individual variables and their distributions.
 
 **Bivariate Analysis**
 
-Description of relationships between two variables.
+Description of statistical relationships between two variables.
 
 **Multivariate Exploratory Analysis**
 
-Description of multidimensional patterns and relationships among several variables.
+Exploration of multidimensional patterns involving several variables.
 
-### 3.3. Methodological Boundaries
+### 3.4. Substantive Applications
 
-The project does not seek to establish causal effects.
+The common statistical framework may be applied to:
 
-Regression modeling, causal inference, and formal hypothesis testing are outside the primary scope of this introductory repository.
+| Research Field | Illustrative Applications |
+|---|---|
+| Economics | Income distributions, employment indicators, productivity, and economic growth |
+| Political Science | Political participation, institutional characteristics, representation, and democratic indicators |
+| Public Policy | Socioeconomic conditions, service coverage, program indicators, and territorial disparities |
+| Political Economy | Distributional inequality, institutional variation, and economic-political associations |
 
-Where survey design requires consideration of sampling uncertainty, the relevant statistical assumptions and limitations will be documented.
+These examples represent possible applications, not completed empirical analyses.
 
-Exploratory statistical associations will not be interpreted as evidence of causality.
+### 3.5. Methodological Boundaries
+
+The project does not seek to identify causal effects.
+
+Regression analysis, formal causal inference, and hypothesis testing are outside the primary scope of this repository.
+
+Exploratory statistical associations will not be interpreted as causal evidence.
 
 ---
 
 ## 4. Statistical Foundations
 
-This section establishes the mathematical and conceptual basis of the statistical procedures.
+The project establishes a common mathematical foundation for descriptive and exploratory statistical analysis.
 
-### 4.1. Foundations of Statistical Measurement
+### 4.1. Fundamental Concepts
 
-- Units of observation and units of analysis.
-- Statistical populations and samples.
-- Parameters and sample statistics.
+- Populations and samples.
+- Parameters and statistics.
+- Units of observation and analysis.
 - Qualitative and quantitative variables.
 - Discrete and continuous variables.
-- Nominal, ordinal, interval, and ratio measurement scales.
-- Measurement validity and comparability.
-- Mathematical notation and statistical conventions.
+- Levels of measurement.
+- Measurement validity.
+- Statistical notation.
 
 ### 4.2. Frequency Distributions
 
@@ -132,7 +179,7 @@ This section establishes the mathematical and conceptual basis of the statistica
 - Relative frequencies.
 - Percentage distributions.
 - Cumulative frequencies.
-- Joint frequency distributions.
+- Joint distributions.
 - Marginal distributions.
 - Conditional distributions.
 
@@ -146,8 +193,6 @@ This section establishes the mathematical and conceptual basis of the statistica
 - Harmonic mean.
 - Trimmed mean.
 
-Alternative means will be used only when their mathematical properties and substantive interpretation are appropriate.
-
 ### 4.4. Measures of Dispersion
 
 - Range.
@@ -158,7 +203,7 @@ Alternative means will be used only when their mathematical properties and subst
 - Interquartile range.
 - Median absolute deviation.
 - Coefficient of variation.
-- Robust measures of dispersion.
+- Robust dispersion measures.
 
 ### 4.5. Measures of Position
 
@@ -168,8 +213,6 @@ Alternative means will be used only when their mathematical properties and subst
 - Quantile functions.
 - Empirical cumulative distribution functions.
 
-Particular attention will be given to differences between quantile calculation methods implemented in statistical software.
-
 ### 4.6. Distributional Shape
 
 - Statistical moments.
@@ -177,79 +220,78 @@ Particular attention will be given to differences between quantile calculation m
 - Skewness.
 - Kurtosis.
 - Distributional symmetry.
-- Heavy-tailed distributions.
+- Tail behavior.
 - Empirical distributional characteristics.
-
-Alternative definitions of skewness and kurtosis will be explicitly identified.
 
 ### 4.7. Standardization and Outliers
 
 - Standard scores.
 - Robust standardization.
-- Tukey's interquartile range criteria.
-- Potential outlier identification.
-- Influence of extreme observations.
-- Substantive versus statistical outliers.
+- Interquartile-range criteria.
+- Potential outlier detection.
+- Sensitivity to extreme observations.
 
-Potential outliers will not be removed automatically.
+Outliers will not be removed automatically.
 
-Exclusion decisions must be justified and documented.
+All exclusion decisions must be justified and documented.
 
 ---
 
 ## 5. Data Quality and Validation
 
-Data validation is treated as a necessary stage of statistical analysis rather than an optional preliminary procedure.
+Data quality assessment constitutes an essential component of the analytical workflow.
 
 ### 5.1. Data Integrity
 
-Procedures will examine:
+The project will examine:
 
-- Number of observations.
-- Number of variables.
-- Variable names and types.
+- Observation counts.
+- Variable types.
 - Unique identifiers.
-- Duplicate observations.
-- Inconsistent records.
-- Invalid categorical codes.
-- Values outside documented ranges.
-- Incompatible units of measurement.
+- Duplicate records.
+- Missing observations.
+- Invalid categories.
+- Out-of-range observations.
+- Measurement inconsistencies.
+- Incompatible units.
 
 ### 5.2. Missing Data
 
-The analysis will distinguish among:
+The analysis will distinguish between:
 
-- Missing observations.
-- Missing values by variable.
-- Missingness patterns.
-- Complete-case samples.
+- Missing values.
+- Structurally inapplicable observations.
+- Nonresponse categories.
 - Variable-specific analytical samples.
-- Missing-value coding conventions.
+- Complete-case samples.
 
-The effect of missing observations on descriptive estimates will be documented.
+Missing-value treatment will be documented for each statistical calculation.
 
 ### 5.3. Data Transformation
 
-Potential transformations include:
+All transformations must be reproducible.
 
-- Variable recoding.
-- Unit conversions.
-- Construction of derived variables.
-- Data type conversion.
+Potential operations include:
+
+- Recoding.
+- Unit conversion.
+- Variable construction.
 - Category harmonization.
-- Data aggregation.
-- Reshaping data structures.
+- Aggregation.
+- Data restructuring.
 
-Every transformation must be reproducible from the original dataset.
+### 5.4. Measurement Comparability
 
-### 5.4. Validation Principles
+Special attention will be given to comparability across:
 
-The project will follow four principles:
+- Social groups.
+- Geographic units.
+- Political and administrative jurisdictions.
+- Institutions.
+- Time periods.
+- Data sources.
 
-1. Preserve original source data.
-2. Document all modifications.
-3. Avoid undocumented exclusions.
-4. Verify the integrity of analytical datasets.
+Changes in definitions, coverage, classification systems, or measurement procedures will be documented.
 
 ---
 
@@ -257,96 +299,90 @@ The project will follow four principles:
 
 ### 6.1. Univariate Analysis
 
-The analysis will include:
-
 - Frequency distributions.
-- Measures of central tendency.
-- Measures of dispersion.
-- Measures of position.
+- Central tendency.
+- Dispersion.
+- Position.
 - Distributional shape.
-- Robust descriptive statistics.
+- Robust statistics.
 
 ### 6.2. Bivariate Analysis
 
-The project will examine:
-
 - Cross-tabulations.
-- Joint and conditional distributions.
+- Conditional distributions.
 - Group comparisons.
 - Covariance.
 - Pearson correlation.
 - Spearman rank correlation.
 - Descriptive measures of categorical association.
 
-### 6.3. Grouped Descriptive Statistics
+### 6.3. Grouped Descriptive Analysis
 
-Statistical summaries will be calculated across relevant social science categories when supported by the data.
+Where appropriate, statistical summaries may be calculated by:
 
-Potential grouping variables may include:
-
-- Sex.
-- Age groups.
-- Educational attainment.
-- Employment status.
-- Income groups.
-- Geographic categories.
-
-The final grouping variables will depend on the selected dataset.
+- Demographic characteristics.
+- Socioeconomic groups.
+- Institutional categories.
+- Geographic units.
+- Political or administrative classifications.
+- Time periods.
 
 ### 6.4. Inequality and Concentration
 
-The advanced modules will introduce:
+Advanced descriptive modules may include:
 
 - Lorenz curves.
 - Gini coefficients.
 - Quantile ratios.
 - Distributional shares.
-- Herfindahl-Hirschman concentration indices.
+- Herfindahl-Hirschman indices.
 
-The interpretation of each measure will depend on the underlying variable and unit of analysis.
+These measures will be interpreted according to their substantive meaning and measurement requirements.
 
 ### 6.5. Descriptive Temporal Analysis
 
-When the dataset contains comparable observations across time, the project may examine:
+When suitable temporal data are available:
 
 - Absolute changes.
-- Relative changes.
+- Percentage changes.
 - Growth rates.
 - Cumulative changes.
 - Index numbers.
 - Descriptive trends.
 
-Temporal comparisons will require consistent definitions, units, and coverage.
+Economic index-number methods may include Laspeyres, Paasche, and Fisher indices when appropriate.
+
+Temporal comparisons require consistent definitions and comparable observational coverage.
 
 ---
 
 ## 7. Exploratory Data Analysis
 
-Exploratory Data Analysis (EDA) will be used to identify empirical patterns, evaluate distributional characteristics, and examine relationships among variables.
+Exploratory Data Analysis (EDA) will be used to identify patterns, evaluate distributions, and examine relationships among variables.
 
 ### 7.1. Distributional Exploration
 
 - Histograms.
-- Kernel density estimates.
+- Density estimates.
 - Empirical cumulative distributions.
 - Quantile plots.
 - Box plots.
-- Distributional comparisons across groups.
+- Grouped distributional comparisons.
 
 ### 7.2. Bivariate Exploration
 
 - Scatter plots.
-- Grouped distributions.
+- Conditional summaries.
+- Group comparisons.
 - Correlation matrices.
-- Comparative box plots.
-- Conditional descriptive summaries.
+- Comparative distributions.
 
 ### 7.3. Robust Exploratory Analysis
 
 - Median-based comparisons.
 - Trimmed means.
-- Robust dispersion measures.
-- Sensitivity to extreme observations.
+- Robust dispersion.
+- Outlier sensitivity.
 - Distributional heterogeneity.
 
 ### 7.4. Multivariate Exploratory Analysis
@@ -359,30 +395,27 @@ Advanced modules may include:
 - Correspondence Analysis (CA).
 - Multiple Correspondence Analysis (MCA).
 
-These methods will be introduced only after their assumptions, measurement requirements, and analytical objectives have been established.
-
-Dimensionality reduction techniques will not be interpreted as causal models.
+These methods will be implemented only when supported by appropriate data structures and methodological justification.
 
 ---
 
 ## 8. Survey Design and Weighting
 
-Social science datasets frequently originate from surveys using complex sampling designs.
+Many social science datasets originate from surveys with complex sampling designs.
 
-Consequently, the project will distinguish between descriptive statistics calculated from the observed sample and weighted estimates intended to represent a target population.
+The project will distinguish between sample descriptions and estimates intended to represent a target population.
 
-### 8.1. Sampling Concepts
+### 8.1. Survey Concepts
 
-- Target population.
-- Sampling frame.
-- Sample design.
+- Target populations.
+- Sampling frames.
 - Sampling units.
 - Stratification.
 - Clustering.
 - Inclusion probabilities.
 - Survey weights.
 
-### 8.2. Types of Weights
+### 8.2. Weighting Procedures
 
 The project will distinguish among:
 
@@ -391,11 +424,11 @@ The project will distinguish among:
 - Probability weights.
 - Other substantively defined weighting schemes.
 
-These weights will not be treated as interchangeable.
+Weights will not be treated as interchangeable.
 
-### 8.3. Weighted Descriptive Analysis
+### 8.3. Weighted Descriptive Statistics
 
-When supported by the data and survey documentation, the project may calculate:
+Where supported by the data:
 
 - Weighted means.
 - Weighted proportions.
@@ -405,22 +438,21 @@ When supported by the data and survey documentation, the project may calculate:
 
 ### 8.4. Complex Survey Considerations
 
-Where applicable, the analysis will document:
+Where applicable, the project will document:
 
 - Sampling strata.
 - Primary sampling units.
-- Survey design variables.
-- Population weights.
-- Design-based estimation requirements.
-- Limitations of unweighted calculations.
+- Survey weights.
+- Target population.
+- Relevant design-based estimation requirements.
 
-Design-based estimates of sampling uncertainty will be distinguished from ordinary descriptive calculations.
+Sampling uncertainty will be distinguished from ordinary descriptive variability.
 
 ---
 
 ## 9. Statistical Visualization
 
-Statistical graphics will be treated as analytical instruments rather than merely illustrative elements.
+Statistical graphics will be treated as analytical tools.
 
 ### 9.1. Basic Visualizations
 
@@ -435,72 +467,49 @@ Statistical graphics will be treated as analytical instruments rather than merel
 - Density plots.
 - Empirical cumulative distribution plots.
 - Quantile plots.
-- Grouped box plots.
 - Correlation heatmaps.
 - Lorenz curves.
-- Temporal descriptive charts.
+- Temporal charts.
+- Multivariate exploratory graphics.
 
 ### 9.3. Visualization Standards
 
-Every visualization should include, as applicable:
+Every visualization should contain, as applicable:
 
 - Informative titles.
 - Clearly labeled axes.
-- Units of measurement.
+- Measurement units.
 - Appropriate scales.
-- Data source identification.
+- Source identification.
 - Relevant methodological notes.
-- Consistent presentation conventions.
 
-Graphs will be generated programmatically and exported in appropriate formats.
+Graphs will be generated programmatically.
 
 ---
 
 ## 10. Software and Computational Environment
 
-### 10.1. Stata 17
+Three statistical environments will be used.
 
-Stata will be used for data management, statistical calculations, tabulations, graphics, and reproducible do-file execution.
+| Software | Primary Applications |
+|---|---|
+| Stata 17 | Data management, descriptive statistics, statistical graphics, and reproducible do-files |
+| R | Statistical computing, data manipulation, exploratory analysis, and visualization |
+| Python 3 | Data processing, numerical analysis, statistical validation, and visualization |
 
-### 10.2. R
+Planned R packages include `dplyr` and `ggplot2`.
 
-R will be used for statistical computing, data manipulation, visualization, and reproducible analytical workflows.
+Planned Python libraries include `pandas`, `numpy`, and `matplotlib`.
 
-Planned packages include:
+Additional packages will be incorporated when required.
 
-- `dplyr`
-- `ggplot2`
-
-Additional packages will be incorporated only when required by the statistical procedures.
-
-### 10.3. Python 3
-
-Python will be used for data processing, numerical calculations, statistical validation, and visualization.
-
-Planned libraries include:
-
-- `pandas`
-- `numpy`
-- `matplotlib`
-
-### 10.4. Computational Documentation
-
-The project will progressively document:
-
-- Software versions.
-- Package versions.
-- Operating system information.
-- Execution instructions.
-- Required dependencies.
-- Relevant computational configurations.
-
-The environment documentation will be completed during implementation.
+Software versions, dependencies, and relevant configurations will be documented during implementation.
 
 ---
 
 ## 11. Repository Structure
 
-The following structure represents the intended organization of the completed project.
+The following structure represents the intended organization of the completed repository.
 
 Some directories already exist, while analytical scripts and supplementary files will be added progressively.
 
@@ -561,17 +570,17 @@ social-science-statistics-fundamentals/
 
 | Directory | Purpose |
 |---|---|
-| `data/raw/` | Original datasets preserved without modification |
-| `data/processed/` | Cleaned and transformed analytical datasets |
-| `data/metadata/` | Data dictionaries, source information, and metadata |
+| `data/raw/` | Preserve original datasets |
+| `data/processed/` | Store documented analytical datasets |
+| `data/metadata/` | Document sources, variables, and measurement conventions |
 | `stata/` | Statistical implementations in Stata |
 | `r/` | Statistical implementations in R |
 | `python/` | Statistical implementations in Python |
-| `outputs/tables/` | Exported statistical tables |
-| `outputs/figures/` | Generated statistical visualizations |
-| `outputs/validation/` | Cross-software comparison and validation results |
-| `docs/` | Statistical, methodological, and computational documentation |
-| `tests/` | Automated validation and consistency tests |
+| `outputs/tables/` | Export statistical tables |
+| `outputs/figures/` | Export statistical graphics |
+| `outputs/validation/` | Store numerical comparison and validation results |
+| `docs/` | Maintain statistical and methodological documentation |
+| `tests/` | Implement automated verification procedures |
 
 ---
 
@@ -587,99 +596,107 @@ Dataset selection will consider:
 2. Reliable institutional or academic provenance.
 3. Clear variable definitions.
 4. Appropriate analytical units.
-5. Sufficient variation for descriptive analysis.
-6. Suitability for univariate and bivariate comparisons.
-7. Availability of documentation.
-8. Licensing and redistribution conditions.
+5. Sufficient observations and statistical variation.
+6. Availability of relevant quantitative and categorical variables.
+7. Technical documentation.
+8. Compatibility with the three software environments.
+9. Licensing and redistribution conditions.
 
-### 12.2. Data Documentation
+### 12.2. Potential Data Sources
 
-The following information will be recorded:
+Depending on the empirical application, potential sources include:
+
+- National statistical offices.
+- Electoral authorities.
+- International statistical organizations.
+- Official socioeconomic surveys.
+- Public administrative datasets.
+- Institutional statistical databases.
+- Open academic research datasets.
+
+Potential Mexican sources include INEGI and INE. International sources may include the World Bank, OECD, UNDP, and other institutions relevant to the selected indicators.
+
+The inclusion of any source will depend on its methodological suitability.
+
+### 12.3. Data Documentation
+
+The project will document:
 
 - Dataset name.
 - Producing institution.
 - Source location.
-- Download or access date.
+- Access date.
 - Reference period.
 - Geographic coverage.
 - Unit of analysis.
-- Sample characteristics.
+- Population or sample characteristics.
 - Variable definitions.
 - Measurement units.
 - Missing-value conventions.
-- Relevant limitations.
-
-### 12.3. Data Provenance
-
-Original data will be preserved separately from transformed data.
-
-Data transformations must be reproducible through documented analytical scripts.
-
-A data dictionary will identify variables, coding conventions, derived indicators, and transformations.
+- Relevant methodological limitations.
 
 ### 12.4. Data Availability
 
-Only datasets that may lawfully be redistributed will be uploaded to the repository.
+Datasets will only be redistributed when permitted by their licensing conditions.
 
-Where redistribution is restricted, the repository will provide source references and documented acquisition procedures instead.
+When redistribution is restricted, acquisition instructions and source references will be provided instead.
 
-**Current Dataset Status:** Not yet selected.
+**Dataset Status:** Not yet selected.
 
 ---
 
 ## 13. Reproducibility and Cross-Software Validation
 
-Computational reproducibility is a central objective of the project.
+Computational reproducibility constitutes a central objective of the project.
 
 ### 13.1. Reproducibility Principles
 
-The analytical workflow will aim to ensure that:
+The project will aim to ensure that:
 
 1. Original data remain unchanged.
 2. Data transformations are documented.
-3. Statistical calculations are implemented in executable scripts.
-4. Results can be regenerated from the specified inputs.
-5. Software environments are documented.
-6. Analytical decisions are transparent.
-7. Equivalent procedures can be compared across software environments.
+3. Analytical scripts are executable.
+4. Statistical definitions are explicit.
+5. Results can be regenerated.
+6. Software environments are documented.
+7. Cross-software comparisons can be independently verified.
 
 ### 13.2. Statistical Equivalence
 
-The project will examine differences among software environments concerning:
+The project will examine differences concerning:
 
 - Missing-value treatment.
 - Sample and population variance.
-- Degrees-of-freedom conventions.
 - Quantile calculation methods.
 - Weighting procedures.
 - Correlation calculations.
-- Treatment of tied ranks.
+- Statistical standardization.
 - Numerical precision.
-- Default estimation options.
+- Software-specific defaults.
 
-### 13.3. Cross-Software Validation
+### 13.3. Numerical Validation
 
-Equivalent statistics will be calculated using Stata, R, and Python.
+Exact agreement will be required for appropriate discrete quantities calculated from identical inputs.
 
-Comparisons will distinguish:
+Continuous statistics will be evaluated using predefined numerical tolerances.
 
-**Exact agreement**
+A general validation criterion is:
 
-Required for appropriate discrete quantities, such as observation counts and frequency tables constructed from identical analytical samples.
+```text
+abs(a - b) <= absolute_tolerance + relative_tolerance * abs(b)
+```
 
-**Numerical agreement**
+The applicable tolerances will be justified and documented for each comparison.
 
-Evaluated using explicitly defined absolute and relative tolerances.
+Unrounded values will be used for validation.
 
-**Methodological agreement**
+Published numerical results will generally be reported to four decimal places.
 
-Evaluated by verifying that formulas, assumptions, analytical samples, and computational definitions are consistent.
-
-### 13.4. Automated Tests
+### 13.4. Automated Verification
 
 The project will progressively introduce tests for:
 
-- Expected observation counts.
+- Observation counts.
 - Variable ranges.
 - Missing-value consistency.
 - Mathematical identities.
@@ -687,61 +704,39 @@ The project will progressively introduce tests for:
 - Cross-software equivalence.
 - Reproducibility of exported results.
 
-### 13.5. Computational Transparency
-
-The project will document:
-
-- Script execution order.
-- Relative file paths.
-- Software dependencies.
-- Analytical parameters.
-- Validation criteria.
-- Known implementation differences.
-
-A successful execution will not automatically be considered sufficient evidence of computational correctness.
-
 ---
 
 ## 14. Sensitivity and Robustness Analysis
 
-Descriptive statistical results can depend on decisions concerning data treatment, variable definitions, and statistical measures.
+Descriptive statistical results may depend on decisions concerning data treatment, measurement, and statistical definitions.
 
-Sensitivity analysis will assess the extent to which substantive conclusions change under alternative defensible analytical specifications.
+Sensitivity analysis will evaluate the consequences of alternative defensible analytical choices.
 
 ### 14.1. Missing-Data Sensitivity
 
-Where relevant, the analysis will compare results obtained from different clearly documented analytical samples.
+Comparison of results calculated using clearly documented analytical samples.
 
 ### 14.2. Outlier Sensitivity
 
-The project will examine the influence of potential outliers using:
+Comparison of:
 
 - Full-sample statistics.
 - Median-based summaries.
 - Trimmed means.
 - Robust dispersion measures.
-- Explicitly justified exclusion criteria, when appropriate.
+- Explicitly justified alternative samples.
 
 ### 14.3. Weighting Sensitivity
 
-Where applicable, weighted and unweighted descriptive results will be compared.
+Where applicable, weighted and unweighted results will be compared.
 
-Differences will be interpreted in relation to the sampling design and target population.
+### 14.4. Statistical Definition Sensitivity
 
-### 14.4. Definition Sensitivity
+Alternative definitions of variance, quantiles, skewness, kurtosis, and inequality measures may be examined.
 
-The project will document the consequences of alternative definitions of:
+### 14.5. Reporting
 
-- Variance.
-- Quantiles.
-- Skewness.
-- Kurtosis.
-- Standardization.
-- Inequality measures.
-
-### 14.5. Robustness Reporting
-
-Sensitivity results will be reported transparently.
+All sensitivity analyses will be documented.
 
 Alternative procedures will not be selected merely because they produce preferred substantive conclusions.
 
@@ -751,49 +746,48 @@ Alternative procedures will not be selected merely because they produce preferre
 
 ### 15.1. Replication Exercise
 
-The project will include an exercise designed to reproduce selected descriptive statistics from an accessible published research article, institutional report, or technical publication.
+The project will include an exercise designed to reproduce selected descriptive results from an accessible academic or institutional publication.
 
 The exercise will involve:
 
-1. Selecting a publicly accessible publication.
-2. Identifying a suitable statistical table or figure.
-3. Obtaining the corresponding dataset and documentation.
-4. Reconstructing the analytical sample.
-5. Reproducing variable definitions.
-6. Implementing the statistical procedure.
-7. Comparing reconstructed results with published findings.
-8. Documenting differences and limitations.
+1. Selecting a suitable publication.
+2. Obtaining the relevant dataset.
+3. Reconstructing the analytical sample.
+4. Reproducing variable definitions.
+5. Implementing the statistical procedures.
+6. Comparing results with the original publication.
+7. Documenting discrepancies and limitations.
 
-Reproducing a published descriptive result will be distinguished from independently replicating a scientific study.
+Computational reproduction will be distinguished from independent scientific replication.
 
-### 15.2. Project Roadmap
+### 15.2. Development Roadmap
 
 | Stage | Description | Status |
 |---|---|---|
-| 1 | GitHub repository creation | Completed |
-| 2 | Repository organization and documentation | In progress |
+| 1 | Repository creation | Completed |
+| 2 | Repository structure and documentation | In Progress |
 | 3 | Dataset selection and documentation | Pending |
-| 4 | Statistical foundations and mathematical verification | Pending |
-| 5 | Univariate and bivariate descriptive analysis | Pending |
+| 4 | Statistical foundations | Pending |
+| 5 | Univariate and bivariate analysis | Pending |
 | 6 | Advanced descriptive and exploratory analysis | Pending |
 | 7 | Survey weighting and sensitivity analysis, where applicable | Pending |
-| 8 | Cross-software validation and automated testing | Pending |
-| 9 | Replication exercise | Pending |
-| 10 | Final reproducibility audit and documentation | Pending |
+| 8 | Cross-software validation | Pending |
+| 9 | Published-results reproduction | Pending |
+| 10 | Final reproducibility audit | Pending |
 
 ### 15.3. Completion Criteria
 
 The project will be considered complete when:
 
-- The selected dataset and its provenance are documented.
+- The selected data and their provenance are documented.
 - Core statistical procedures have been implemented.
-- The corresponding scripts execute successfully.
-- Mathematical definitions and computational conventions are documented.
-- Cross-software comparisons have been performed.
+- Analytical scripts execute successfully.
+- Statistical definitions are documented.
+- Cross-software comparisons have been completed.
 - Discrepancies are explained or explicitly acknowledged.
-- Required outputs can be regenerated.
+- Outputs can be regenerated.
 - The replication exercise has been evaluated.
-- The final repository contains sufficient instructions to reproduce the analyses.
+- Reproducibility requirements have been verified.
 
 ---
 
@@ -803,32 +797,45 @@ The project will be considered complete when:
 
 The project is descriptive and exploratory.
 
-Statistical associations will not be interpreted as causal relationships.
+Statistical associations do not establish causal effects.
 
-The validity of empirical results will depend on data quality, measurement decisions, sample characteristics, and the appropriateness of the statistical procedures.
+The validity of empirical results depends on:
 
-Advanced methods will be implemented only when supported by suitable data and methodological justification.
+- Data quality.
+- Measurement validity.
+- Population coverage.
+- Sampling procedures.
+- Statistical assumptions.
+- Computational implementation.
+- Appropriate substantive interpretation.
 
-### 16.2. Computational Limitations
+### 16.2. Social Science Interpretation
 
-Different statistical software packages may produce different numerical results because of:
+Statistical results must be interpreted in relation to the substantive concepts represented by the variables.
 
-- Alternative default settings.
-- Statistical definition differences.
-- Numerical precision.
-- Data handling procedures.
-- Weighting conventions.
-- Algorithmic implementations.
+Individual-level relationships cannot automatically be generalized to aggregate units.
 
-Such differences will be examined rather than ignored.
+Similarly, aggregate statistical relationships cannot automatically be attributed to individual behavior.
 
-### 16.3. References
+Differences across countries, institutions, territories, or periods require attention to measurement comparability.
 
-Statistical and methodological references will be incorporated into `docs/references.md`.
+### 16.3. Methodological References
 
-References will be documented using APA 7 conventions.
+The project draws on established statistical literature and openly accessible technical resources.
 
-Only sources actually consulted or used to support the project's methods will be included.
+Primary methodological references will include:
+
+- Anderson, Sweeney, and Williams.
+- Triola.
+- Newbold, Carlson, and Thorne.
+- Illowsky and Dean.
+- Diez, Barr, and Çetinkaya-Rundel.
+- NIST/SEMATECH.
+- Statistics Canada.
+
+Additional references will be incorporated when required by specialized statistical procedures.
+
+Complete bibliographic information will be maintained in `docs/references.md` using APA 7 conventions.
 
 ### 16.4. License
 
@@ -840,8 +847,8 @@ External datasets, publications, and third-party materials remain subject to the
 
 ---
 
-### Final Project Principle
+## Final Project Principle
 
-**Statistical rigor requires more than obtaining numerical results. It requires clear definitions, justified analytical decisions, transparent computational procedures, and verifiable evidence that the reported results correspond to the documented methods.**
+**Rigorous statistical research in the social sciences requires conceptual clarity, appropriate measurement, transparent analytical decisions, mathematically consistent procedures, reproducible computation, and substantive interpretations supported by empirical evidence.**
 
-This project is designed around that principle.
+Social Science Statistics Fundamentals is designed around these principles.
